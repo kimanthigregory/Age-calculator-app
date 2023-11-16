@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:hsl(0, 0%, 94%) ;
+}
+
+/* typography */
+section{
+    background-color:hsl(0, 0%, 100%) ;
+}
+label{
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: hsl(0, 1%, 44%);
+    display: block;
+}
+form p{
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: hsl(0, 100%, 67%);
+    
+}
+input[type="text"]{
+    width: 9rem;
+    height: 3rem;
+    font-size: 32px;
+    padding-left:1rem ;
+    font-weight: 700;
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 8px;
+}
+input[type="text"]:focus{
+    outline: 1px solid hsl(259, 60%, 67%);
+}
+button img{
+    width: 2rem;
+}
+.icon button{
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+.border{
+    border: 1px solid hsl(0, 0%, 86%);
+}
+article h1{
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 800;
+    font-style: italic;
+}
+article span{
+    color: hsl(259, 100%, 65%);
+}

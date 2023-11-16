@@ -10,6 +10,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <main>
+        <section>
+            <form action="post">
+                <label for="day">DAY</label>
+                <input type="text"  id="day" aria-describedby="day-error" placeholder="DD">
+                <p aria-hidden="true" id="day-error">This field is required </p>
+                <label for="month">MONTH</label>
+                <input type="text" id="month" aria-describedby="month-error" placeholder="MM">
+                <p aria-hidden="true" id="month-error">This field is required</p>
+                <label for="year">YEAR</label>
+                <input type="text" id="year" aria-describedby="year-error" placeholder="YYYY">
+                <p aria-hidden="true" id="year-error">This field is required</p>
+            </form>
+            <article>
+                <div class="border">
+
+                </div>
+                <div class="icon">
+                    <button><img src="./images/icon-arrow.svg" alt="submit icon  "></button>
+                </div>
+           </article>
+            <article>
+                <h1><span>--</span> years </h1>
+                <h1><span>--</span> months </h1>
+                <h1><span>--</span> days</h1>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
