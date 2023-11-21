@@ -13,17 +13,23 @@
     <main>
         <section>
             <form action="post">
-                <label for="day">DAY</label>
-                <input type="text"  id="day" aria-describedby="day-error" placeholder="DD">
-                <p aria-hidden="true" id="day-error">This field is required </p>
-                <label for="month">MONTH</label>
-                <input type="text" id="month" aria-describedby="month-error" placeholder="MM">
-                <p aria-hidden="true" id="month-error">This field is required</p>
-                <label for="year">YEAR</label>
-                <input type="text" id="year" aria-describedby="year-error" placeholder="YYYY">
-                <p aria-hidden="true" id="year-error">This field is required</p>
+                <div class="input-container">
+                    <label for="day">DAY</label>
+                    <input type="text"  id="day" aria-describedby="day-error" placeholder="DD">    
+                    <p aria-hidden="true" id="day-error">This field is required </p>
+                </div>
+                <div class="input-container">
+                    <label for="month">MONTH</label>
+                    <input type="text" id="month" aria-describedby="month-error" placeholder="MM">
+                    <p aria-hidden="false" id="month-error">This field is required</p>    
+                </div>
+                <div class="input-container">
+                    <label for="year">YEAR</label>
+                    <input type="text" id="year" aria-describedby="year-error" placeholder="YYYY">
+                    <p aria-hidden="true" id="year-error">This field is required</p>    
+                </div>
             </form>
-            <article>
+            <article class="submit-section">
                 <div class="border">
 
                 </div>
