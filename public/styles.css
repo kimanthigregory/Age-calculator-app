@@ -24,6 +24,9 @@ form p{
     margin-bottom: 0;
     display: none;
 }
+.show-error{
+    display: block;
+}
 input[type="text"]{
     width: 9rem;
     height: 4rem;

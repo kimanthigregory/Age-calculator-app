@@ -15,17 +15,17 @@
             <form action="post">
                 <div class="input-container">
                     <label for="day">DAY</label>
-                    <input type="text"  id="day" aria-describedby="day-error" placeholder="DD">    
+                    <input type="text"  id="day" aria-describedby="day-error" placeholder="DD" class="input-field">    
                     <p aria-hidden="true" id="day-error">This field is required </p>
                 </div>
                 <div class="input-container">
                     <label for="month">MONTH</label>
-                    <input type="text" id="month" aria-describedby="month-error" placeholder="MM">
-                    <p aria-hidden="false" id="month-error">This field is required</p>    
+                    <input type="text" id="month" aria-describedby="month-error" placeholder="MM" class="input-field">
+                    <p aria-hidden="true" id="month-error">This field is required</p>    
                 </div>
                 <div class="input-container">
                     <label for="year">YEAR</label>
-                    <input type="text" id="year" aria-describedby="year-error" placeholder="YYYY">
+                    <input type="text" id="year" aria-describedby="year-error" placeholder="YYYY" class="input-field">
                     <p aria-hidden="true" id="year-error">This field is required</p>    
                 </div>
             </form>
@@ -34,7 +34,7 @@
 
                 </div>
                 <div class="icon">
-                    <button><img src="./images/icon-arrow.svg" alt="submit icon  "></button>
+                    <button id="submit"><img src="./images/icon-arrow.svg" alt="submit icon  "></button>
                 </div>
            </article>
             <article>
@@ -44,5 +44,6 @@
             </article>
         </section>
     </main>
+    <script src="/script/validation.js  "></script>
 </body>
 </html>
