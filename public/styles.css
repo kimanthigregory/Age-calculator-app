@@ -15,6 +15,9 @@ label{
     color: hsl(0, 1%, 44%);
     display: block;
 }
+.change-color{
+    color: hsl(0, 100%, 67%);
+}
 form p{
     font-family: 'Poppins', sans-serif;
     font-weight:400;
@@ -36,6 +39,9 @@ input[type="text"]{
     color: hsl(0, 0%, 8%);
     border: 1px solid hsl(0, 0%, 86%);
     border-radius: 8px;
+}
+.show-outline{
+    outline:1px solid hsl(0, 100%, 67%);
 }
 input[type="text"]:focus{
     outline: 1px solid hsl(259, 60%, 67%);

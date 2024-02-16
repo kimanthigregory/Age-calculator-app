@@ -16,11 +16,17 @@ inputField.forEach((input) => {
             var parentDiv = input.closest(".input-container")
             var error = parentDiv.querySelector("p");
             error.classList.add("show-error");
+            parentDiv.querySelector("label").classList.add("change-color");
+            parentDiv.querySelector("input[type='text']").classList.add("show-outline");
+    
         }
         else{
             var parentDiv = input.closest(".input-container")
             var error = parentDiv.querySelector("p");
             error.classList.remove("show-error");
+            parentDiv.querySelector("label").classList.remove("change-color");
+            parentDiv.querySelector("input[type='text']").classList.remove("show-outline");
+    
         }
     });
 });
@@ -35,6 +41,9 @@ submit.addEventListener("click",function(event){
         var parentDiv = input.closest(".input-container")
         var error = parentDiv.querySelector("p");
         error.classList.add("show-error");
+        parentDiv.querySelector("label").classList.add("change-color");
+        parentDiv.querySelector("input[type='text']").classList.add("show-outline");
+
     }
     else{
         form.submit();
@@ -42,3 +51,6 @@ submit.addEventListener("click",function(event){
     }
    });
 })
+function showErrorMessage(){
+    
+}

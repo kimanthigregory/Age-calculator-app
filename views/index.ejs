@@ -12,20 +12,20 @@
 <body>
     <main>
         <section>
-            <form action="post">
+            <form action="/input" method="post">
                 <div class="input-container">
                     <label for="day">DAY</label>
-                    <input type="text"  id="day" aria-describedby="day-error" placeholder="DD" class="input-field">    
+                    <input type="text" name = "date" id="day" aria-describedby="day-error" placeholder="DD" >    
                     <p aria-hidden="true" id="day-error">This field is required </p>
                 </div>
                 <div class="input-container">
                     <label for="month">MONTH</label>
-                    <input type="text" id="month" aria-describedby="month-error" placeholder="MM" class="input-field">
+                    <input type="text" name = "month" id="month" aria-describedby="month-error" placeholder="MM" >
                     <p aria-hidden="true" id="month-error">This field is required</p>    
                 </div>
                 <div class="input-container">
                     <label for="year">YEAR</label>
-                    <input type="text" id="year" aria-describedby="year-error" placeholder="YYYY" class="input-field">
+                    <input type="text" name = "year" id="year" aria-describedby="year-error" placeholder="YYYY" >
                     <p aria-hidden="true" id="year-error">This field is required</p>    
                 </div>
             </form>
