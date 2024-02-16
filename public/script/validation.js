@@ -6,6 +6,7 @@ const errorMessage = document.querySelector("form p");
 
 const inputField = document.querySelectorAll(".input-container input");
 const submitButton = document.querySelector("#submit");
+const form = document.querySelector("form");
 
 inputField.forEach((input) => {
     input.addEventListener("input",()=>{
@@ -24,6 +25,20 @@ inputField.forEach((input) => {
     });
 });
 
-submit.addEventListener("click",()=>{
-    alert("clicked");
+submit.addEventListener("click",function(event){
+   event.preventDefault(); 
+   
+   inputField.forEach((input) => {
+    const emptyInput = Array.from(inputField).some((input) =>input.value.trim() === "")
+    if(emptyInput){
+        // alert("please input a value");
+        var parentDiv = input.closest(".input-container")
+        var error = parentDiv.querySelector("p");
+        error.classList.add("show-error");
+    }
+    else{
+        form.submit();
+        // alert("submiting values...");
+    }
+   });
 })
