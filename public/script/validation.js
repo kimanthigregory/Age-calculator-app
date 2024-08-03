@@ -4,10 +4,6 @@ const year = document.querySelector("#year");
 const submit = document.querySelector("#submit");
 const errorMessage = document.querySelector("form p");
 
-// const invalidDateError = document.querySelector("#invalidDate-error");
-// const invalidMonthError = document.querySelector("#invalidMonth-error");
-// const invalidError = document.querySelector("#invalid-error");
-
 const inputField = document.querySelectorAll(".input-container input");
 const submitButton = document.querySelector("#submit");
 const form = document.querySelector("form");
@@ -17,11 +13,13 @@ const showErrorTwo = function(input){
     var error = parentDiv.querySelector("p");
     error.classList.add("show-error");
 }
+
 const removeErrortwo =function(input){
     var parentDiv = input.closest(".input-container");
     var error = parentDiv.querySelector("p");
     error.classList.remove("show-error")
 }
+
 const showError = function (input) {
   var parentDiv = input.closest(".input-container");
   // var error = parentDiv.querySelector("p");
@@ -34,6 +32,7 @@ const removeError = function (input) {
   parentDiv.querySelector("label").classList.remove("change-color");
   parentDiv.querySelector("input[type='text']").classList.remove("show-outline");
 };
+
 inputField.forEach((input, currentIndex) => {
   input.addEventListener("input", () => {
     const checkInput = input.value.trim() === "";

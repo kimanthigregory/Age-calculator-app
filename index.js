@@ -26,13 +26,17 @@ app.post("/input",(req,res)=>{
         const createDate = new Date(year,month,date)
         const today = new Date();
 
-        const dateOfBirth = today.getDate() - createDate.getDate();
-        const monthOfBirth = today.getMonth() - createDate.getMonth();
+        let dateOfBirth = today.getDate() - createDate.getDate();
+        let monthOfBirth = today.getMonth() - createDate.getMonth();
         let yearOfBirth = today.getFullYear() - createDate.getFullYear();
-        if (monthOfBirth <0 || usersMonth === createDate.getMonth() && dateOfBirth < 0){
-            yearOfBirth--
+        if (dateOfBirth <0 ){
+            monthOfBirth--;
+            dateOfBirth +=  new Date(today.getFullYear(), today.getMonth(), 0).getDate();
         }
-
+        if (monthOfBirth<0){
+            yearOfBirth --;
+            monthOfBirth +=12
+        }
         return {dateOfBirth, monthOfBirth, yearOfBirth};
     
     }
